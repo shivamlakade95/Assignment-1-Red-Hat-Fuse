@@ -1,0 +1,20 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1626685302505
+Build-Jdk: 11.0.11
+Built-By: slakade
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: camel-xmltojava-javatoxml Example
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Content-Based Router Example [ExampleXMLtoJAVA_JAVAto
+ XML]
+Bundle-SymbolicName: ExampleXMLtoJAVA_JAVAtoXML
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mypackage;version="1.0.0";uses:="javax.xml.bind.anno
+ tation,org.apache.camel"
+Import-Package: javax.xml.bind;version="[2.3,3)",javax.xml.bind.annotati
+ on;version="[2.3,3)",org.apache.camel;version="[2.23,3)",org.apache.log
+ 4j;version="[1.2,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

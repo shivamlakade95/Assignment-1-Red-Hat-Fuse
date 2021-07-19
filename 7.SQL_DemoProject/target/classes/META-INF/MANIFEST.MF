@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1626415271863
+Build-Jdk: 16.0.1
+Built-By: slakade
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: SQL Query - Fuse
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Content-Based Router Example [SQL_DemoProject]
+Bundle-SymbolicName: SQL_DemoProject
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Import-Package: org.apache.commons.dbcp2;version="[2,3)",org.osgi.servic
+ e.blueprint;version="[1.0.0,2.0.0)",org.mariadb.jdbc,org.springframewor
+ k.util.function;version="5.2.9.RELEASE"
+Tool: Bnd-3.2.0.201605172007

@@ -1,0 +1,4 @@
+camel context:WF_00_BLANK
+
+camel:route-show
+camel:route-list

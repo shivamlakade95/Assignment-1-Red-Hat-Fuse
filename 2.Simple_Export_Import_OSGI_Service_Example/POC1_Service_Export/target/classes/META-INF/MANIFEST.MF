@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1626348706090
+Build-Jdk: 1.8.0_282
+Built-By: slakade
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: blueprint-osgi-service-exporter
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: blueprint-osgi-service-exporter
+Bundle-SymbolicName: blueprint-osgi-service-exporter
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mypackage1;version="1.0.0"
+Export-Service: com.mypackage1.HelloService
+Import-Package: org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

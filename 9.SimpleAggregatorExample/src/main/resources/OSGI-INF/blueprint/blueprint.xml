@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="              http://www.osgi.org/xmlns/blueprint/v1.0.0 https://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd              http://camel.apache.org/schema/blueprint https://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
+    <bean class="com.myexample.MyAggregationStrategy" id="myAggregationStrategy"/>
+    <bean class="com.myexample.ProducerTemplateProcessor" id="producerTemplateProcessor"/>
+    <camelContext id="aggregator-example" xmlns="http://camel.apache.org/schema/blueprint">
+        <route id="producerTemplate">
+            <from id="_from1" uri="timer:foo?repeatCount=1"/>
+            <process id="_process1" ref="producerTemplateProcessor"/>
+        </route>
+        <route id="_route1">
+            <from id="_from2" uri="direct:start"/>
+            <log id="_log1" message="Sending ${body} with key ${header.myId}"/>
+            <aggregate completionSize="3" id="_aggregate1" strategyRef="myAggregationStrategy">
+                <correlationExpression>
+                    <header>myId</header>
+                </correlationExpression>
+                <log id="_log2" message="Sending Out : ${body}"/>
+                <to id="_to1" uri="seda:queue1"/>
+            </aggregate>
+        </route>
+        <route id="sedaqueue1">
+            <from id="_from3" uri="seda:queue1"/>
+            <log id="_log3" message="Received Body : ${body}"/>
+        </route>
+    </camelContext>
+</blueprint>

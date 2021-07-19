@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1626348737578
+Build-Jdk: 1.8.0_282
+Built-By: slakade
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: poc-service-import
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: poc-service-import
+Bundle-SymbolicName: poc-service-import
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mypackage2;uses:="com.mypackage1";version="1.0.0"
+Import-Package: com.mypackage1;version="[1.0,2)",org.apache.log4j;versio
+ n="[1.2,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Import-Service: com.mypackage1.HelloService;multiple:=false
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

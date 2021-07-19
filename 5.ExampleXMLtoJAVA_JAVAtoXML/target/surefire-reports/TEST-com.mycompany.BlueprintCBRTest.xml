@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.mycompany.BlueprintCBRTest" time="0.556" tests="1" errors="1" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/test-classes:/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/classes:/home/slakade/.m2/repository/org/apache/camel/camel-core/2.23.2.fuse-780036-redhat-00001/camel-core-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar:/home/slakade/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar:/home/slakade/.m2/repository/org/apache/camel/camel-blueprint/2.23.2.fuse-780036-redhat-00001/camel-blueprint-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/camel/camel-core-xml/2.23.2.fuse-780036-redhat-00001/camel-core-xml-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/camel/camel-core-osgi/2.23.2.fuse-780036-redhat-00001/camel-core-osgi-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/slf4j/slf4j-api/1.7.22.redhat-2/slf4j-api-1.7.22.redhat-2.jar:/home/slakade/.m2/repository/org/slf4j/slf4j-log4j12/1.7.22.redhat-2/slf4j-log4j12-1.7.22.redhat-2.jar:/home/slakade/.m2/repository/log4j/log4j/1.2.17.redhat-3/log4j-1.2.17.redhat-3.jar:/home/slakade/.m2/repository/org/apache/camel/camel-test-blueprint/2.23.2.fuse-780036-redhat-00001/camel-test-blueprint-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/camel/camel-test/2.23.2.fuse-780036-redhat-00001/camel-test-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy/1.1.6/org.apache.aries.proxy-1.1.6.jar:/home/slakade/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.api/1.0.1/org.apache.aries.blueprint.api-1.0.1.jar:/home/slakade/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.core/1.10.2/org.apache.aries.blueprint.core-1.10.2.jar:/home/slakade/.m2/repository/org/apache/aries/quiesce/org.apache.aries.quiesce.api/1.0.0/org.apache.aries.quiesce.api-1.0.0.jar:/home/slakade/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy.api/1.1.0/org.apache.aries.proxy.api-1.1.0.jar:/home/slakade/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.cm/1.3.1/org.apache.aries.blueprint.cm-1.3.1.jar:/home/slakade/.m2/repository/org/apache/aries/org.apache.aries.util/1.1.3/org.apache.aries.util-1.1.3.jar:/home/slakade/.m2/repository/org/apache/felix/org.apache.felix.connect/0.2.0/org.apache.felix.connect-0.2.0.jar:/home/slakade/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-tinybundles/1.3.2/pax-swissbox-tinybundles-1.3.2.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-lang/1.5.1/ops4j-base-lang-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-io/1.5.1/ops4j-base-io-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-monitors/1.5.1/ops4j-base-monitors-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-store/1.5.1/ops4j-base-store-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-bnd/1.8.3/pax-swissbox-bnd-1.8.3.jar:/home/slakade/.m2/repository/biz/aQute/bnd/bndlib/2.4.0/bndlib-2.4.0.jar:/home/slakade/.m2/repository/commons-logging/commons-logging/1.2.0.redhat-3/commons-logging-1.2.0.redhat-3.jar:/home/slakade/.m2/repository/junit/junit/4.12.0.redhat-003/junit-4.12.0.redhat-003.jar:/home/slakade/.m2/repository/org/hamcrest/hamcrest-core/1.3-redhat-1/hamcrest-core-1.3-redhat-1.jar:/home/slakade/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.9.16/org.apache.felix.configadmin-1.9.16.jar:/home/slakade/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/slakade/.m2/repository/javax/xml/ws/jaxws-api/2.3.0/jaxws-api-2.3.0.jar:/home/slakade/.m2/repository/javax/xml/soap/javax.xml.soap-api/1.4.0/javax.xml.soap-api-1.4.0.jar:/home/slakade/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/slakade/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/slakade/.m2/repository/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar:/home/slakade/.m2/repository/org/apache/geronimo/specs/geronimo-ws-metadata_2.0_spec/1.1.3/geronimo-ws-metadata_2.0_spec-1.1.3.jar:/home/slakade/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.4.0-b03/saaj-impl-1.4.0-b03.jar:/home/slakade/.m2/repository/org/jvnet/mimepull/mimepull/1.9.7/mimepull-1.9.7.jar:/home/slakade/.m2/repository/org/jvnet/staxex/stax-ex/1.7.8/stax-ex-1.7.8.jar:/home/slakade/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/home/slakade/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/home/slakade/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1.redhat-00003/geronimo-jta_1.1_spec-1.1.1.redhat-00003.jar:/home/slakade/.m2/repository/org/jboss/spec/javax/rmi/jboss-rmi-api_1.0_spec/1.0.6.Final/jboss-rmi-api_1.0_spec-1.0.6.Final.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/home/slakade/Downloads/jdk-11.0.11_linux-x64_bin/jdk-11.0.11/lib"/>
+    <property name="sun.java.command" value="/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/surefire/surefirebooter4756300822785586910.jar /home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/surefire 2021-07-19T11-41-02_101-jvmRun1 surefire15447131572609698140tmp surefire_011136491186740291169tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/test-classes:/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/classes:/home/slakade/.m2/repository/org/apache/camel/camel-core/2.23.2.fuse-780036-redhat-00001/camel-core-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/com/sun/xml/bind/jaxb-core/2.3.0/jaxb-core-2.3.0.jar:/home/slakade/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar:/home/slakade/.m2/repository/org/apache/camel/camel-blueprint/2.23.2.fuse-780036-redhat-00001/camel-blueprint-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/camel/camel-core-xml/2.23.2.fuse-780036-redhat-00001/camel-core-xml-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/camel/camel-core-osgi/2.23.2.fuse-780036-redhat-00001/camel-core-osgi-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/slf4j/slf4j-api/1.7.22.redhat-2/slf4j-api-1.7.22.redhat-2.jar:/home/slakade/.m2/repository/org/slf4j/slf4j-log4j12/1.7.22.redhat-2/slf4j-log4j12-1.7.22.redhat-2.jar:/home/slakade/.m2/repository/log4j/log4j/1.2.17.redhat-3/log4j-1.2.17.redhat-3.jar:/home/slakade/.m2/repository/org/apache/camel/camel-test-blueprint/2.23.2.fuse-780036-redhat-00001/camel-test-blueprint-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/camel/camel-test/2.23.2.fuse-780036-redhat-00001/camel-test-2.23.2.fuse-780036-redhat-00001.jar:/home/slakade/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy/1.1.6/org.apache.aries.proxy-1.1.6.jar:/home/slakade/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.api/1.0.1/org.apache.aries.blueprint.api-1.0.1.jar:/home/slakade/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.core/1.10.2/org.apache.aries.blueprint.core-1.10.2.jar:/home/slakade/.m2/repository/org/apache/aries/quiesce/org.apache.aries.quiesce.api/1.0.0/org.apache.aries.quiesce.api-1.0.0.jar:/home/slakade/.m2/repository/org/apache/aries/proxy/org.apache.aries.proxy.api/1.1.0/org.apache.aries.proxy.api-1.1.0.jar:/home/slakade/.m2/repository/org/apache/aries/blueprint/org.apache.aries.blueprint.cm/1.3.1/org.apache.aries.blueprint.cm-1.3.1.jar:/home/slakade/.m2/repository/org/apache/aries/org.apache.aries.util/1.1.3/org.apache.aries.util-1.1.3.jar:/home/slakade/.m2/repository/org/apache/felix/org.apache.felix.connect/0.2.0/org.apache.felix.connect-0.2.0.jar:/home/slakade/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-tinybundles/1.3.2/pax-swissbox-tinybundles-1.3.2.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-lang/1.5.1/ops4j-base-lang-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-io/1.5.1/ops4j-base-io-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-monitors/1.5.1/ops4j-base-monitors-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/base/ops4j-base-store/1.5.1/ops4j-base-store-1.5.1.jar:/home/slakade/.m2/repository/org/ops4j/pax/swissbox/pax-swissbox-bnd/1.8.3/pax-swissbox-bnd-1.8.3.jar:/home/slakade/.m2/repository/biz/aQute/bnd/bndlib/2.4.0/bndlib-2.4.0.jar:/home/slakade/.m2/repository/commons-logging/commons-logging/1.2.0.redhat-3/commons-logging-1.2.0.redhat-3.jar:/home/slakade/.m2/repository/junit/junit/4.12.0.redhat-003/junit-4.12.0.redhat-003.jar:/home/slakade/.m2/repository/org/hamcrest/hamcrest-core/1.3-redhat-1/hamcrest-core-1.3-redhat-1.jar:/home/slakade/.m2/repository/org/apache/felix/org.apache.felix.configadmin/1.9.16/org.apache.felix.configadmin-1.9.16.jar:/home/slakade/.m2/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/home/slakade/.m2/repository/javax/xml/ws/jaxws-api/2.3.0/jaxws-api-2.3.0.jar:/home/slakade/.m2/repository/javax/xml/soap/javax.xml.soap-api/1.4.0/javax.xml.soap-api-1.4.0.jar:/home/slakade/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/home/slakade/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/home/slakade/.m2/repository/com/sun/activation/javax.activation/1.2.0/javax.activation-1.2.0.jar:/home/slakade/.m2/repository/org/apache/geronimo/specs/geronimo-ws-metadata_2.0_spec/1.1.3/geronimo-ws-metadata_2.0_spec-1.1.3.jar:/home/slakade/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.4.0-b03/saaj-impl-1.4.0-b03.jar:/home/slakade/.m2/repository/org/jvnet/mimepull/mimepull/1.9.7/mimepull-1.9.7.jar:/home/slakade/.m2/repository/org/jvnet/staxex/stax-ex/1.7.8/stax-ex-1.7.8.jar:/home/slakade/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/home/slakade/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/home/slakade/.m2/repository/org/apache/geronimo/specs/geronimo-jta_1.1_spec/1.1.1.redhat-00003/geronimo-jta_1.1_spec-1.1.1.redhat-00003.jar:/home/slakade/.m2/repository/org/jboss/spec/javax/rmi/jboss-rmi-api_1.0_spec/1.0.6.Final/jboss-rmi-api_1.0_spec-1.0.6.Final.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/home/slakade"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/home/slakade/Downloads/jdk-11.0.11_linux-x64_bin/jdk-11.0.11"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/surefire/surefirebooter4756300822785586910.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
+    <property name="user.name" value="slakade"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.18.0-305.3.1.el8_4.x86_64"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/home/slakade/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="idea.version" value="2021.1.3"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="user.dir" value="/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.11+9-LTS-194"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testCamelRoute" classname="com.mycompany.BlueprintCBRTest" time="0.419">
+    <error message="The reference to entity &quot;amp:period&quot; must end with the &apos;;&apos; delimiter." type="java.lang.RuntimeException"><![CDATA[java.lang.RuntimeException: The reference to entity "amp:period" must end with the ';' delimiter.
+Caused by: org.xml.sax.SAXParseException: The reference to entity "amp:period" must end with the ';' delimiter.
+]]></error>
+    <system-out><![CDATA[[                          main] CamelBlueprintHelper           INFO  Using Blueprint XML file: /home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/classes/OSGI-INF/blueprint/blueprint.xml
+[                      Thread-1] RawBuilder                     INFO  Copy thread finished.
+[                      Thread-2] RawBuilder                     INFO  Copy thread finished.
+[                          main] Activator                      INFO  Camel activator starting
+[                          main] Activator                      INFO  Camel activator started
+[                          main] BlueprintCBRTest               INFO  ********************************************************************************
+[                          main] BlueprintCBRTest               INFO  Testing done: testCamelRoute(com.mycompany.BlueprintCBRTest)
+[                          main] BlueprintCBRTest               INFO  Took: 0.357 seconds (357 millis)
+[         Blueprint Extender: 1] BlueprintContainerImpl         ERROR Unable to start container for blueprint bundle BlueprintCBRTest/1.0.0
+org.xml.sax.SAXParseException; systemId: jar:file:/home/slakade/eclipse-workspace/ExampleXMLtoJAVA_JAVAtoXML/target/test-bundles/blueprintcbrtest-1626675062868.jar!/OSGI-INF/blueprint/blueprint--home-slakade-eclipse-workspace-ExampleXMLtoJAVA_JAVAtoXML-target-classes-OSGI-INF-blueprint-blueprint.xml; lineNumber: 18; columnNumber: 73; The reference to entity "amp:period" must end with the ';' delimiter.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:261)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at org.apache.aries.blueprint.parser.Parser.parse(Parser.java:242)
+	at org.apache.aries.blueprint.parser.Parser.parse(Parser.java:257)
+	at org.apache.aries.blueprint.container.BlueprintContainerImpl.doRun(BlueprintContainerImpl.java:327)
+	at org.apache.aries.blueprint.container.BlueprintContainerImpl.run(BlueprintContainerImpl.java:298)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.apache.aries.blueprint.container.ExecutorServiceWrapper.run(ExecutorServiceWrapper.java:106)
+	at org.apache.aries.blueprint.utils.threading.impl.DiscardableRunnable.run(DiscardableRunnable.java:45)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+[                          main] BlueprintCBRTest               INFO  ********************************************************************************
+[                          main] CamelBlueprintHelper           INFO  Deleting work directory target/bundles/1626675062868
+]]></system-out>
+    <system-err><![CDATA[[Fatal Error] :18:73: The reference to entity "amp:period" must end with the ';' delimiter.
+[Fatal Error] blueprint--home-slakade-eclipse-workspace-ExampleXMLtoJAVA_JAVAtoXML-target-classes-OSGI-INF-blueprint-blueprint.xml:18:73: The reference to entity "amp:period" must end with the ';' delimiter.
+]]></system-err>
+  </testcase>
+</testsuite>

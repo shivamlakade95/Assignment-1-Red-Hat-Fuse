@@ -1,0 +1,13 @@
+create table emp(id INT NOT NULL AUTO_INCREMENT, title VARCHAR(50) NOT NULL, description VARCHAR(200), sal INT NOT NULL, create_date DATE, PRIMARY KEY(id));
+
+insert into emp values(1, "Shivam", "ATSE", 80000, '2021-06-02');
+
+select * from emp;
+
+insert into emp values(2, "Chandra Sir", "PSME", 90000, '2010-10-10');
+
+select * from emp;
+
+delete from emp where id=2;
+
+select * from emp;

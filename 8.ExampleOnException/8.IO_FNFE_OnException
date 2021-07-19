@@ -1,0 +1,75 @@
+/home/slakade/Downloads/jdk-11.0.11_linux-x64_bin/jdk-11.0.11/bin/java -Dmaven.multiModuleProjectDirectory=/home/slakade/eclipse-workspace/ExampleOnException -Dmaven.home=/app/idea-IC/plugins/maven/lib/maven3 -Dclassworlds.conf=/app/idea-IC/plugins/maven/lib/maven3/bin/m2.conf -Dmaven.ext.class.path=/app/idea-IC/plugins/maven/lib/maven-event-listener.jar -javaagent:/app/idea-IC/lib/idea_rt.jar=35413:/app/idea-IC/bin -Dfile.encoding=UTF-8 -classpath /app/idea-IC/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar:/app/idea-IC/plugins/maven/lib/maven3/boot/plexus-classworlds.license org.codehaus.classworlds.Launcher -Didea.version=2021.1.3 -DskipTests=true camel:run
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------< com.mycompany:camel-blueprint-cbr >------------------
+[INFO] Building Fuse CBR Quickstart 1.0.0-SNAPSHOT
+[INFO] -------------------------------[ bundle ]-------------------------------
+[INFO] 
+[INFO] >>> camel-maven-plugin:7.8.0.fuse-sb2-780038-redhat-00001:run (default-cli) > prepare-package @ camel-blueprint-cbr >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ camel-blueprint-cbr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ camel-blueprint-cbr ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /home/slakade/eclipse-workspace/ExampleOnException/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ camel-blueprint-cbr ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/slakade/eclipse-workspace/ExampleOnException/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ camel-blueprint-cbr ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ camel-blueprint-cbr ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] <<< camel-maven-plugin:7.8.0.fuse-sb2-780038-redhat-00001:run (default-cli) < prepare-package @ camel-blueprint-cbr <<<
+[INFO] 
+[INFO] 
+[INFO] --- camel-maven-plugin:7.8.0.fuse-sb2-780038-redhat-00001:run (default-cli) @ camel-blueprint-cbr ---
+[INFO] You can skip tests from the command line using: mvn camel:run -Dmaven.test.skip=true
+[INFO] Using org.apache.camel.test.blueprint.Main to initiate a CamelContext
+[INFO] Starting Camel ...
+[                      Thread-2] RawBuilder                     INFO  Copy thread finished.
+[mel.test.blueprint.Main.main()] Activator                      INFO  Camel activator starting
+[mel.test.blueprint.Main.main()] Activator                      INFO  Camel activator started
+[         Blueprint Extender: 1] BlueprintContainerImpl         INFO  Blueprint bundle ExampleOnException/1.0.0.SNAPSHOT is waiting for namespace handlers [http://camel.apache.org/schema/blueprint]
+[         Blueprint Extender: 1] BlueprintContainerImpl         INFO  Blueprint bundle org.apache.aries.blueprint.cm/1.3.1 has been started
+[         Blueprint Extender: 3] BlueprintContainerImpl         INFO  Blueprint bundle org.apache.aries.blueprint.core/1.10.2 has been started
+[         Blueprint Extender: 2] BlueprintContainerImpl         INFO  Blueprint bundle org.apache.camel.camel-blueprint/2.23.2.fuse-780036-redhat-00001 has been started
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.sun.xml.bind.v2.runtime.reflect.opt.Injector (file:/home/slakade/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.0/jaxb-impl-2.3.0.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int)
+WARNING: Please consider reporting this to the maintainers of com.sun.xml.bind.v2.runtime.reflect.opt.Injector
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[         Blueprint Extender: 1] BlueprintCamelStateService     INFO  Karaf BundleStateService not accessible. Bundle state won't reflect Camel context state
+[         Blueprint Extender: 1] BlueprintContainerImpl         INFO  Blueprint bundle ExampleOnException/1.0.0.SNAPSHOT has been started
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Attempting to start CamelContext: cbr-example-context
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Apache Camel 2.23.2.fuse-780036-redhat-00001 (CamelContext: cbr-example-context) is starting
+[ Blueprint Event Dispatcher: 1] ManagedManagementStrategy      INFO  JMX is enabled
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  StreamCaching is not in use. If using streams then its recommended to enable stream caching. See more details at http://camel.apache.org/stream-caching.html
+[ Blueprint Event Dispatcher: 1] SedaEndpoint                   INFO  Endpoint seda://withinExceptionBlock is using shared queue: seda://withinExceptionBlock with size: 1000
+[ Blueprint Event Dispatcher: 1] SedaEndpoint                   INFO  Endpoint seda://withinFNFEBlock is using shared queue: seda://withinFNFEBlock with size: 1000
+[ Blueprint Event Dispatcher: 1] SedaEndpoint                   INFO  Endpoint seda://queue.inbox is using shared queue: seda://queue.inbox with size: 1000
+[ Blueprint Event Dispatcher: 1] SedaEndpoint                   INFO  Endpoint seda://queue.inbox2 is using shared queue: seda://queue.inbox2 with size: 1000
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Route: route1 started and consuming from: timer://foo?repeatCount=1
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Route: route2 started and consuming from: seda://queue.inbox
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Route: route3 started and consuming from: seda://withinExceptionBlock
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Route: routeFNFE1 started and consuming from: timer://foo?repeatCount=1
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Route: routeFNFE2 started and consuming from: seda://queue.inbox2
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Route: routeFNFE3 started and consuming from: seda://withinFNFEBlock
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Total 6 routes, of which 6 are started
+[ Blueprint Event Dispatcher: 1] BlueprintCamelContext          INFO  Apache Camel 2.23.2.fuse-780036-redhat-00001 (CamelContext: cbr-example-context) started in 0.365 seconds
+[ntext) thread #6 - timer://foo] route1                         INFO  body1....Hello All
+[ntext) thread #6 - timer://foo] routeFNFE1                     INFO  body1 from FNFE....Hello All from FNF
+[hread #4 - seda://queue.inbox2] OrderService                   INFO  Within validate2 method....
+[thread #2 - seda://queue.inbox] OrderService                   INFO  Within validate method....
+[thread #2 - seda://queue.inbox] OrderService                   INFO  Within validate method....
+[hread #4 - seda://queue.inbox2] OrderService                   INFO  Within validate2 method....
+[thread #2 - seda://queue.inbox] route2                         INFO  within onException clause of IOException
+[hread #4 - seda://queue.inbox2] routeFNFE2                     INFO  within onException clause of FileNotFoundException
+[ - seda://withinExceptionBlock] route3                         INFO  in withinExceptionBlock Hello All
+[ad #5 - seda://withinFNFEBlock] routeFNFE3                     INFO  in within FNFE Block Hello All from FNF
+

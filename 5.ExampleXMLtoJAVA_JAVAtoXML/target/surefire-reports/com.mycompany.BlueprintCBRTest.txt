@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.mycompany.BlueprintCBRTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.556 s <<< FAILURE! - in com.mycompany.BlueprintCBRTest
+com.mycompany.BlueprintCBRTest.testCamelRoute  Time elapsed: 0.419 s  <<< ERROR!
+java.lang.RuntimeException: The reference to entity "amp:period" must end with the ';' delimiter.
+Caused by: org.xml.sax.SAXParseException: The reference to entity "amp:period" must end with the ';' delimiter.
+
