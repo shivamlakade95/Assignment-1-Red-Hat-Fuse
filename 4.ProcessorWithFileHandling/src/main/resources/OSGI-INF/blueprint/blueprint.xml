@@ -10,7 +10,7 @@
                         ${date-with-timezone:now:GMT+5:30:MM-dd-yyyy HH:mm:ss}
                     </simple>
             </setBody>
-            <!-- <process id="_process1" ref="processorbean"/> -->
+            <process id="_process1" ref="processorbean"/>
             <!--<bean id="_bean1" ref="beanTransform"/>
             <to id="processor" uri="processorbean"/>-->
 

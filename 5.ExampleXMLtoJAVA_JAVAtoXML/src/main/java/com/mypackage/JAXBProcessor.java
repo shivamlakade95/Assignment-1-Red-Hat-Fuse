@@ -22,12 +22,12 @@ public class JAXBProcessor implements Processor {
         order.setAmount(8);
 
         logger.info("In Marshaling - PurchaseOrder :");
-        unmarshall();
+        //unmarshall();
         exchange.getIn().setBody(order);
     }
 
 
-    private static final String INBOX ="file:///home/slakade/Downloads/etc/output/ID-slakade-pnq-csb-1626679209519-13-4\n";
+    private static final String INBOX ="file:///home/slakade/Downloads/etc/output/ID-slakade-pnq-csb-1626868807183-0-4\n";
     public void unmarshall()
     {
         try{
