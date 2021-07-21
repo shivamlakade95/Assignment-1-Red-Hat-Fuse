@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1626268423986
+Build-Jdk: 11.0.11
+Built-By: slakade
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: cxf-ssl-soap-example
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: CXF SSL
+Bundle-SymbolicName: CXFSSL
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mycompany.cxf.soap.model;version="1.0.0";uses:="java
+ x.jws,javax.xml.ws",com.mycompany.cxf.soap.endpoint;version="1.0.0";use
+ s:="com.mycompany.cxf.soap.model,org.apache.cxf.binding.soap,org.apache
+ .cxf.binding.soap.interceptor,org.apache.cxf.interceptor,org.apache.cxf
+ .message"
+Import-Package: javax.jws;version="[0,3)",javax.xml.ws;version="[2,3)",j
+ avax.servlet.http;version="[4.0,5)",com.mycompany.cxf.soap.model;versio
+ n="[1.0,2)",org.apache.cxf.binding.soap;version="[3.2,4)",org.apache.cx
+ f.binding.soap.interceptor;version="[3.2,4)",org.apache.cxf.binding.soa
+ p.saaj;version="[3.2,4)",org.apache.cxf.interceptor;version="[3.2,4)",o
+ rg.apache.cxf.message;version="[3.2,4)",org.apache.log4j;version="[1.2,
+ 2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

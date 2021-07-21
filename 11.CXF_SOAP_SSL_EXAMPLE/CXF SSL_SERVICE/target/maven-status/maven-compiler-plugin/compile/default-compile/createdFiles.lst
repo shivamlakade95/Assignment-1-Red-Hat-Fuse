@@ -1,0 +1,5 @@
+com/mycompany/cxf/soap/model/PersonService.class
+com/mycompany/cxf/soap/model/PersonException.class
+com/mycompany/cxf/soap/endpoint/TestResponse.class
+com/mycompany/cxf/soap/endpoint/HttpHeaderHandler.class
+com/mycompany/cxf/soap/model/Person.class
