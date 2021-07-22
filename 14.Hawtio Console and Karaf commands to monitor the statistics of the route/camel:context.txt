@@ -1,4 +1,61 @@
-camel context:WF_00_BLANK
 
 camel:route-show
+:karaf@root()> camel:route-show cbr-example-context cbr-route
+_________________________________________________________________________________________________________________________
 camel:route-list
+:karaf@root()> camel:route-list cbr-example-context
+_________________________________________________________________________________________________________________________
+camel:component-list                                     (Lists all Camel components that are in use in Karaf)
+:karaf@root()> camel:component-list -v cbr-example-context
+_________________________________________________________________________________________________________________________
+camel:context-info                                        (Display detailed information about a Camel context)
+:karaf@root()> camel:context-info cbr-example-context
+_________________________________________________________________________________________________________________________
+camel:context-list                                                                  (Lists all Camel contexts)
+:karaf@root()> camel:context-list
+ Context               Status              Total #       Failed #     Inflight #   Uptime         
+ -------               ------              -------       --------     ----------   ------         
+ cbr-example-context   Started                   1              0              0   7.776 seconds  
+ rest-client           Started                  14             14              0   6 minutes  
+_________________________________________________________________________________________________________________________
+
+
+
+camel:eip-explain                                                        (Explain the EIP in the CamelContext)
+camel:endpoint-explain                             (Explain all Camel endpoints available in the CamelContext)
+camel:endpoint-list                                                                    (Lists Camel endpoints)
+camel:endpoint-stats                                                     (Display endpoint runtime statistics)
+camel:rest-api-doc (List the Camel REST services API documentation (requires camel-swagger-java on classpath))
+camel:rest-registry-list     (Lists all Camel REST services enlisted in the Rest Registry from a CamelContext)
+camel:rest-show                                                     (Display the Camel REST definition in XML)
+camel:route-info                                                     (Display information about a Camel route)
+camel:route-list                                                                           (List Camel routes)
+_________________________________________________________________________________________________________________________
+camel:route-profile                                         (Display profile information about Camel route(s))
+:karaf@root()> camel:route-profile cbr-example-context cbr-route
+
+Profile
+	Camel Context: cbr-example-context
+Id                                  Count    Last (ms)   Delta (ms)    Mean (ms)     Min (ms)     Max (ms)   Total (ms)    Self (ms)
+cbr-route                              62            1           -3            4            0          139          291            3
+  _setHeader1                          62            0            0            0            0            1          288            2
+  _to1                                 62            0           -1            1            0           18          286           86
+  _log5                                62            0           -3            3            0          135          200          200
+
+_________________________________________________________________________________________________________________________
+
+camel:route-reset-stats                                    (Reset route performance stats from a CamelContext)
+camel:route-resume                                                                      (Resume a Camel route)
+camel:route-show                                                   (Display the Camel route definition in XML)
+camel:route-start                                                                        (Start a Camel route)
+camel:route-stop                                                                          (Stop a Camel route)
+camel:route-suspend                                                                    (Suspend a Camel route)
+
+camel:context-suspend                                                               (Suspends a Camel context)
+camel:context-resume                                                                 (Resumes a Camel context)
+camel:context-start                                                                    (Start a Camel context)
+camel:context-stop                 (Stop a Camel context. It becomes unavailable and can not be started again)
+camel:context-inflight                                                               (List inflight exchanges)
+:
+_________________________________________________________________________________________________________________________
+

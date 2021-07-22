@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1626939409903
+Build-Jdk: 11.0.11
+Built-By: slakade
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: camel-cxf-rest-client
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: CXF-REST-CLIENT
+Bundle-SymbolicName: CXF-REST-CLIENT
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.test.client;version="1.0.0";uses:="org.apache.camel"
+Import-Package: org.apache.camel;version="[2.21,3)",org.apache.log4j;ver
+ sion="[1.2,2)",org.jboss.fuse.quickstarts.cxf.rest;version="[7.8,8)",or
+ g.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

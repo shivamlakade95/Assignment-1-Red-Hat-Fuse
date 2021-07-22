@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jboss.fuse.quickstarts:cxf-rest:7.8.0.fuse-780017-redhat-00001">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/fuse/quickstarts/cxf-rest/7.8.0.fuse-780017-redhat-00001/cxf-rest-7.8.0.fuse-780017-redhat-00001.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/fuse/quickstarts/cxf-rest/7.8.0.fuse-780017-redhat-00001/cxf-rest-7.8.0.fuse-780017-redhat-00001-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/fuse/quickstarts/cxf-rest/7.8.0.fuse-780017-redhat-00001/cxf-rest-7.8.0.fuse-780017-redhat-00001-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

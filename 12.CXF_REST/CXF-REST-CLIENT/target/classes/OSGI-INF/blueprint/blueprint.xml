@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+		   xmlns:cm="http://aries.apache.org/blueprint/xmlns/blueprint-cm/v1.2.0"
+		   xmlns:cxf="http://camel.apache.org/schema/blueprint/cxf"
+		   xmlns:http-conf="http://cxf.apache.org/transports/http/configuration"
+		   xmlns:http="http://cxf.apache.org/transports/http/configuration"
+
+		   xmlns:jaxrs="http://cxf.apache.org/jaxrs"
+		   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		   xsi:schemaLocation="http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd        http://cxf.apache.org/transports/http/configuration http://cxf.apache.org/schemas/configuration/http-conf.xsd        http://cxf.apache.org/transports/http/configuration http://cxf.apache.org/schemas/configuration/http-conf.xsd              http://cxf.apache.org/jaxrs http://cxf.apache.org/schemas/blueprint/jaxrs.xsd">
+
+
+	<cm:property-placeholder
+			id="myblueprint.placeholder" persistent-id="camel.blueprint">
+		<!-- list some properties for this test -->
+		<cm:default-properties>
+			<cm:property name="cert_port" value="9006" />
+		</cm:default-properties>
+	</cm:property-placeholder>
+
+	<http:conduit name="https://localhost:9006/.*">
+
+		<http:client AutoRedirect="true" Connection="Keep-Alive" />
+
+	</http:conduit>
+
+
+	<cxf:cxfEndpoint
+		address="http://localhost:8181/cxf/crm/customerservice/customers" id="customerService"
+		serviceClass="org.jboss.fuse.quickstarts.cxf.rest.CustomerService" />
+<bean id="clientprocessor" class="com.test.client.ClientProcessor"/>
+<bean id="responseprocessor" class="com.test.client.ResponseProcessor"/>
+
+	<camelContext id="rest-client"
+				  xmlns="http://camel.apache.org/schema/blueprint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				  xsi:schemaLocation="http://camel.apache.org/schema/blueprint ">
+
+		<route id="client-route">
+			<from id="_from1"
+				  uri="timer://foo?fixedRate=true&amp;period=30000"/>
+			<!--<setHeader headerName="operationName">
+				<constant>getCustomer</constant>
+			</setHeader>
+			-->
+			<log message="body: ${body}"/>
+			<!--<process ref="clientprocessor"/>-->
+			<to uri="http4://localhost:8181/cxf/crm/customerservice/customers/123"/>
+			<log message="body: ${body}"/>
+			<!--<to uri="cxf:bean:customerService"/>-->
+			<!--<process ref="responseprocessor"/>-->
+		</route>
+	</camelContext>
+</blueprint>

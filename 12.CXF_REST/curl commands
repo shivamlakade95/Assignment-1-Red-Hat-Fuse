@@ -2,3 +2,5 @@ curl http://localhost:8181/cxf/crm/customerservice/customers/123
 
 curl -v -X POST -H "Content-Type: application/json" -d '{"name":"shivam"}' http://localhost:8181/cxf/crm/customerservice/customers
 
+curl -v -X POST -H "Content-Type: application/json" -d '{"name":"ankush"}' http://localhost:8181/cxf/crm/customerservice/customers
+

@@ -25,6 +25,7 @@
                     <xpath>//Customer</xpath>
                     <log message="Within Customer GET ${body}"/>
                     <to uri="http4://localhost:7575/myapp/"/>
+                    <log message="GET Response : ${body}"/>
                 </split>
             </when>
             <when>
