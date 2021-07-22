@@ -1,0 +1,5 @@
+org/jboss/fuse/quickstarts/cxf/rest/package-info.class
+org/jboss/fuse/quickstarts/cxf/rest/Customer.class
+org/jboss/fuse/quickstarts/cxf/rest/Product.class
+org/jboss/fuse/quickstarts/cxf/rest/CustomerService.class
+org/jboss/fuse/quickstarts/cxf/rest/Order.class

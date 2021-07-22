@@ -16,7 +16,7 @@
 
         <route id="cbr-route">
             <from id="_from1" uri="file:/home/slakade/Downloads/etc/splittertest"/>
-            <log message="Headers: ${headers} <------>Body : ${body}"/>
+            <!--<log message="Headers: ${headers} <&#45;&#45;&#45;&#45;&ndash;&gt;Body : ${body}"/>-->
             <log id="_log1" message="Receiving order ${file:name}"/>
             <choice>
             <when>
