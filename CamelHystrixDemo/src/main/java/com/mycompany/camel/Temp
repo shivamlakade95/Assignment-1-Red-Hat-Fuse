@@ -1,0 +1,55 @@
+/*from("file:work/cbr/input")
+				.hystrix()
+				.id("circuit-breaker")
+				.inheritErrorHandler(true)
+				.hystrixConfiguration()
+				.circuitBreakerEnabled(true)
+				.executionTimeoutInMilliseconds(1000)
+				//.circuitBreakerSleepWindowInMilliseconds(5000)
+				.circuitBreakerRequestVolumeThreshold(2)
+				.fallbackEnabled(false)
+				.end()
+				.to("file:work/cbr/output/others")
+				.endHystrix()
+				.log("Done processing ${file:name}")
+				.end();*/
+
+		/*from("timer:trigger?period=1s")
+				.log(" Client request: ${body}")
+				.hystrix()
+				.to("https://www.youtube.com/")
+				// use onFallback() to provide a repsonse message immediately
+				// use onFallbackViaNetwork() when there is a 2nd service call
+				.onFallbackViaNetwork()
+				.to("https://www.google.co.in/")
+				.end()
+				.log("Client response: ${body}");*/
+
+
+				try {
+                			Thread.sleep(10000);
+                			count = 1;
+                		} catch (InterruptedException e) {
+                			e.printStackTrace();
+                		}
+                		if(count==1)
+                		{
+                			//policy.setKeepOpen(true);
+                		}
+
+implements ThrottlingExceptionHalfOpenHandler
+
+				.process(new Processor() {
+					public void process(Exchange exchange) {
+						System.out.println("Inside route: Before "+policy.getKeepOpen());
+					}
+				})
+
+				/*.process(new Processor() {
+                					public void process(Exchange exchange)
+                					{
+                						//setKeepOpen() is set to true so that Consumer will stop consuming messages.
+                						policy.setKeepOpen(true);
+                						System.out.println("Inside route: After "+policy.getKeepOpen());
+                					}
+                				})*/

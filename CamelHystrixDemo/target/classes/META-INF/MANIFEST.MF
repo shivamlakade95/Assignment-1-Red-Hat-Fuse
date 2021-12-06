@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1638765865052
+Build-Jdk: 11.0.11
+Built-By: slakade
+Bundle-Description: Camel Content-Based Router Example using the Java DS
+ L
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Content-Based Router Example using the Java DSL [Came
+ lHystrixDemo]
+Bundle-SymbolicName: CamelHystrixDemo
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mycompany.camel;version="1.0.0";uses:="org.apache.ca
+ mel.builder"
+Import-Package: org.apache.camel.builder;version="[2.23,3)",org.apache.c
+ amel.impl;version="[2.23,3)",org.apache.camel.main;version="[2.23,3)",o
+ rg.apache.camel.model;version="[2.23,3)",org.apache.camel.spi;version="
+ [2.23,3)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007
